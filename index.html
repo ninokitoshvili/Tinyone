@@ -1,556 +1,818 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+			integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+			integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__conteiner column">
+				<div class="header__conteiner__head">
+					<div class="header__conteiner__head__drop column" onClick="showNav()">
+						<div class="header__conteiner__drop__box"></div>
+						<div class="header__conteiner__drop__box"></div>
+						<div class="header__conteiner__drop__box"></div>
+					</div>
 
-<header class="header">
-    <div class="header__conteiner column">
-        <div class="header__conteiner__head">
-            <div class="header__conteiner__head__drop column " onClick="showNav()">
-                <div class="header__conteiner__drop__box"></div>
-                <div class="header__conteiner__drop__box"></div>
-                <div class="header__conteiner__drop__box"></div>
-            </div>
+					<div class="header__conteiner__head__logo">
+						<div class="header__conteiner__head__logo__image">
+							<i class="fas fa-fingerprint"></i>
+						</div>
+						<span class="header__conteiner__head__logo__name">tinyone</span>
+					</div>
 
-            <div class="header__conteiner__head__logo">
-                <div class="header__conteiner__head__logo__image"><i class="fas fa-fingerprint"></i></div>
-                <span class="header__conteiner__head__logo__name">tinyone</span>
-            </div>
+					<div class="header__conteiner__head__icons">
+						<div class="header__conteiner__head__icon">
+							<a href="#" class="header__conteiner__head__link"
+								><i class="fab fa-facebook-f"></i
+							></a>
+						</div>
+						<div class="header__conteiner__head__icon">
+							<a href="#" class="header__conteiner__head__link"
+								><i class="fab fa-twitter"></i
+							></a>
+						</div>
+						<div class="header__conteiner__head__icon">
+							<a href="#" class="header__conteiner__head__link"
+								><i class="fab fa-google-plus-g"></i
+							></a>
+						</div>
+						<div class="header__conteiner__head__icon">
+							<a href="#" class="header__conteiner__head__link"
+								><i class="fab fa-pinterest"></i
+							></a>
+						</div>
+					</div>
+				</div>
 
-            <div class="header__conteiner__head__icons">
-                <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-facebook-f"></i></a></div>
-                <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-twitter"></i></a></div>
-                <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-google-plus-g"></i></a></div>
-                <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-pinterest"></i></a></div>
-            </div>
-        
-        </div>
+				<div class="header__conteiner__main column">
+					<span class="header__conteiner__main__head"
+						>Inspire your inspiration</span
+					>
+					<p class="header__conteiner__main__para">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum aut
+						nobis rem facere voluptatibus quaerat. Repudiandae totam eveniet
+						dignissimos? Possimus impedit quaerat veniam ad quidem fugit, minus
+						perferendis saepe alias.
+					</p>
+					<button class="header__conteiner__main__btn">GET START</button>
+				</div>
 
+				<div class="header__conteiner__footer">
+					<i class="fas fa-arrow-down header__conteiner__footer__arrow"></i>
+				</div>
+			</div>
+		</header>
 
+		<div class="drop__nav" id="drop__nav">
+			<ul class="drop__nav__conteiner">
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link"
+						>Tinyone features</a
+					>
+				</li>
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link"
+						>Pricing And free Trial</a
+					>
+				</li>
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link">Our works</a>
+				</li>
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link">Our team</a>
+				</li>
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link"
+						>States & Testimonial</a
+					>
+				</li>
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link"
+						>Keep in touch with us</a
+					>
+				</li>
+				<li class="drop__nav__conteiner__list">
+					<a href="#" class="drop__nav__conteiner__list__link"
+						>Sing up for our newsletter</a
+					>
+				</li>
+			</ul>
+		</div>
 
-        <div class="header__conteiner__main column">
-            <span class="header__conteiner__main__head">Inspire your inspiration</span>
-            <p class="header__conteiner__main__para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum aut nobis rem facere voluptatibus quaerat. Repudiandae totam eveniet dignissimos? Possimus impedit quaerat veniam ad quidem fugit, minus perferendis saepe alias.</p>
-            <button class="header__conteiner__main__btn">GET START</button>
-        </div>
+		<div class="features column">
+			<div class="features__conteiner column">
+				<div class="features__header">
+					<h1 class="features__header__title">Tinyone features</h1>
+					<p class="features__header__para">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+						vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a
+						deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores,
+						quisquam distinctio?
+					</p>
+				</div>
+				<div class="features__main">
+					<div class="features__main__contein">
+						<div class="features__main__contein__img">
+							<i class="fas fa-mobile-alt features__icon"></i>
+						</div>
+						<div class="features__main__contein__img__about column">
+							<h3 class="features__main__title">Tinyone features</h3>
+							<p class="features__main__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Molestias vel, facilis suscipit voluptatum numquam ab laborum
+								enim voluptas a deleniti autem cupiditate quibusdam iste alias
+								eveniet eos. Maiores, quisquam distinctio?
+							</p>
+						</div>
+					</div>
+					<div class="features__main__contein">
+						<div class="features__main__contein__img">
+							<i class="fas fa-lemon features__icon"></i>
+						</div>
+						<div class="features__main__contein__img__about column">
+							<h3 class="features__main__title">Fully Layered PSD</h3>
+							<p class="features__main__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Molestias vel, facilis suscipit voluptatum numquam ab laborum
+								enim voluptas a deleniti autem cupiditate quibusdam iste alias
+								eveniet eos. Maiores, quisquam distinctio?
+							</p>
+						</div>
+					</div>
+					<div class="features__main__contein">
+						<div class="features__main__contein__img">
+							<i class="fas fa-file features__icon"></i>
+						</div>
+						<div class="features__main__contein__img__about column">
+							<h3 class="features__main__title">Font awesome icons</h3>
+							<p class="features__main__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Molestias vel, facilis suscipit voluptatum numquam ab laborum
+								enim voluptas a deleniti autem cupiditate quibusdam iste alias
+								eveniet eos. Maiores, quisquam distinctio?
+							</p>
+						</div>
+					</div>
+					<div class="features__main__contein">
+						<div class="features__main__contein__img">
+							<i class="fas fa-code features__icon"></i>
+						</div>
+						<div class="features__main__contein__img__about column">
+							<h3 class="features__main__title">HTML & CSS</h3>
+							<p class="features__main__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Molestias vel, facilis suscipit voluptatum numquam ab laborum
+								enim voluptas a deleniti autem cupiditate quibusdam iste alias
+								eveniet eos. Maiores, quisquam distinctio?
+							</p>
+						</div>
+					</div>
+					<div class="features__main__contein">
+						<div class="features__main__contein__img">
+							<i class="fas fa-envelope features__icon"></i>
+						</div>
+						<div class="features__main__contein__img__about column">
+							<h3 class="features__main__title">Email Template</h3>
+							<p class="features__main__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Molestias vel, facilis suscipit voluptatum numquam ab laborum
+								enim voluptas a deleniti autem cupiditate quibusdam iste alias
+								eveniet eos. Maiores, quisquam distinctio?
+							</p>
+						</div>
+					</div>
+					<div class="features__main__contein">
+						<div class="features__main__contein__img">
+							<i class="fas fa-bookmark features__icon"></i>
+						</div>
+						<div class="features__main__contein__img__about column">
+							<h3 class="features__main__title">Free To Dowload</h3>
+							<p class="features__main__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Molestias vel, facilis suscipit voluptatum numquam ab laborum
+								enim voluptas a deleniti autem cupiditate quibusdam iste alias
+								eveniet eos. Maiores, quisquam distinctio?
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="trial features">
+			<div class="features__conteiner column">
+				<div class="features__header">
+					<h1 class="features__header__title">Pricing and free Trial</h1>
+					<p class="features__header__para">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+						vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a
+						deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores,
+						quisquam distinctio?
+					</p>
+				</div>
+				<div class="trial__main">
+					<div class="trial__main__item column">
+						<div class="trial__main__img">
+							<i class="fas fa-mobile-alt trial__main__img__icon"></i>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header">Basic</h3>
+							<span class="trial__main__info__span"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+							>
+						</div>
+						<div class="trial__main__price">
+							<h3 class="trial__main__price__header">FREE</h3>
+							<span class="trial__main__price__span">free forever</span>
+						</div>
 
+						<button class="trial__main__btn">GET FREE NOW</button>
+					</div>
+					<div class="trial__main__item column">
+						<div class="trial__main__img">
+							<i class="fas fa-laptop trial__main__img__icon"></i>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header">Standard</h3>
+							<span class="trial__main__info__span"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+							>
+						</div>
+						<div class="trial__main__price">
+							<h3 class="trial__main__price__header">$99</h3>
+							<span class="trial__main__price__span">month</span>
+						</div>
 
-        <div class="header__conteiner__footer">
-            <i class="fas fa-arrow-down header__conteiner__footer__arrow "></i>
-        </div>
+						<button class="trial__main__btn">UPGRADE</button>
+					</div>
+					<div class="trial__main__item column">
+						<div class="trial__main__img">
+							<i class="fas fa-desktop trial__main__img__icon"></i>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header">Enterprise</h3>
+							<span class="trial__main__info__span"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+							>
+						</div>
+						<div class="trial__main__price">
+							<h3 class="trial__main__price__header">$199</h3>
+							<span class="trial__main__price__span">month</span>
+						</div>
 
-    </div>
-</header>
+						<button class="trial__main__btn">LEARN MORE</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="work">
+			<div class="work__conteiner features__conteiner column">
+				<div class="features__header">
+					<h1 class="features__header__title">Ouar Works</h1>
+					<p class="features__header__para">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+						vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a
+						deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores,
+						quisquam distinctio?
+					</p>
+				</div>
+				<div class="work__main trial__main">
+					<div class="work__main__item column">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item column">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item column">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item column">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+					<div class="work__main__item">
+						<div class="work__main__item__img">
+							<div></div>
+							<div class="work__main__item__img__info">
+								<div>
+									<i class="far fa-eye"></i>
+									<span>222</span>
+								</div>
+								<div>
+									<span>20/03/18</span>
+									<i class="far fa-clock"></i>
+								</div>
+							</div>
+						</div>
+						<div class="trial__main__info">
+							<h3 class="trial__main__info__header work__img__about">
+								Font Awesome Icons
+							</h3>
+							<span class="trial__main__info__span">Design / Branding</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<div class="drop__nav " id="drop__nav">
-    <ul class="drop__nav__conteiner">
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">Tinyone features</a></li>
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">Pricing And free Trial</a></li>
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">Our works</a></li>
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">Our team</a></li>
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">States & Testimonial</a></li>
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">Keep in touch with us</a></li>
-        <li class="drop__nav__conteiner__list"><a href="#" class="drop__nav__conteiner__list__link">Sing up for our newsletter</a></li>
+		<div class="team">
+			<div class="team__conteiner features__conteiner column">
+				<div class="features__header">
+					<h1 class="features__header__title">Our Works</h1>
+					<p class="features__header__para">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+						vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a
+						deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores,
+						quisquam distinctio?
+					</p>
+				</div>
+				<div class="team__main">
+					<div class="team__main__item column">
+						<div class="team__main__item__img"></div>
 
-    </ul>
-</div>
+						<div class="trial__main__info team__main__name">
+							<h3 class="trial__main__info__header work__img__about">
+								John Doe
+							</h3>
+							<span class="trial__main__info__span">UI Designer</span>
+							<p class="trial__main__info__span">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+						</div>
 
+						<div class="header__conteiner__head__icons team__main__item__icons">
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-facebook-f"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-twitter"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-linkedin-in"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="team__main__item column">
+						<div class="team__main__item__img"></div>
 
+						<div class="trial__main__info team__main__name">
+							<h3 class="trial__main__info__header work__img__about">
+								John Doe
+							</h3>
+							<span class="trial__main__info__span">UI Designer</span>
+							<p class="trial__main__info__span">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+						</div>
 
+						<div class="header__conteiner__head__icons team__main__item__icons">
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-facebook-f"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-twitter"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-linkedin-in"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="team__main__item column">
+						<div class="team__main__item__img"></div>
 
+						<div class="trial__main__info team__main__name">
+							<h3 class="trial__main__info__header work__img__about">
+								John Doe
+							</h3>
+							<span class="trial__main__info__span">UI Designer</span>
+							<p class="trial__main__info__span">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+						</div>
 
-<div class="features column">
-    <div class="features__conteiner column ">
-        <div class="features__header">
-            <h1 class="features__header__title">Tinyone features</h1>
-            <p class="features__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>
-        </div>
-        <div class="features__main">
-            <div class="features__main__contein">
-                <div class="features__main__contein__img">
-                    <i class="fas fa-mobile-alt features__icon"></i>
-                </div>
-                <div class="features__main__contein__img__about column">
-                        <h3 class="features__main__title">Tinyone features</h3>
-                        <p class="features__main__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>            
-                </div>
-            </div>
-            <div class="features__main__contein">
-                    <div class="features__main__contein__img">
-                            <i class="fas fa-lemon features__icon"></i>
-                        </div>
-                        <div class="features__main__contein__img__about column">
-                                <h3 class="features__main__title"> Fully Layered PSD </h3>
-                                <p class="features__main__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>            
-                        </div>
-            </div>
-            <div class="features__main__contein">
-                    <div class="features__main__contein__img">
-                            <i class="fas fa-file features__icon"></i>
-                        </div>
-                        <div class="features__main__contein__img__about column">
-                                <h3 class="features__main__title">Font awesome icons</h3>
-                                <p class="features__main__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>            
-                        </div>
-            </div>
-            <div class="features__main__contein">
-                    <div class="features__main__contein__img">
-                            <i class="fas fa-code features__icon"></i>
-                        </div>
-                        <div class="features__main__contein__img__about column">
-                                <h3 class="features__main__title">HTML & CSS</h3>
-                                <p class="features__main__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>            
-                        </div>
-            </div>
-            <div class="features__main__contein">
-                    <div class="features__main__contein__img">
-                            <i class="fas fa-envelope features__icon"></i>
-                        </div>
-                        <div class="features__main__contein__img__about column">
-                                <h3 class="features__main__title">Email Template</h3>
-                                <p class="features__main__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>            
-                        </div>
-            </div>
-            <div class="features__main__contein">
-                    <div class="features__main__contein__img">
-                            <i class="fas fa-bookmark features__icon"></i>
-                        </div>
-                        <div class="features__main__contein__img__about column">
-                                <h3 class="features__main__title">Free To Dowload</h3>
-                                <p class="features__main__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>            
-                        </div>
-            </div>
+						<div class="header__conteiner__head__icons team__main__item__icons">
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-facebook-f"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-twitter"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-linkedin-in"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="team__main__item column">
+						<div class="team__main__item__img"></div>
 
-        </div>
+						<div class="trial__main__info team__main__name">
+							<h3 class="trial__main__info__header work__img__about">
+								John Doe
+							</h3>
+							<span class="trial__main__info__span">UI Designer</span>
+							<p class="trial__main__info__span">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+						</div>
 
+						<div class="header__conteiner__head__icons team__main__item__icons">
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-facebook-f"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-twitter"></i
+								></a>
+							</div>
+							<div class="header__conteiner__head__icon">
+								<a href="#" class="header__conteiner__head__link"
+									><i class="fab fa-linkedin-in"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    </div>
+		<div class="stat">
+			<div class="stat__conteiner features__conteiner column">
+				<div class="features__header">
+					<h1 class="features__header__title">Stats & Testimonial</h1>
+					<p class="features__header__para">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+						vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a
+						deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores,
+						quisquam distinctio?
+					</p>
+				</div>
 
-</div>
+				<div class="stat__statistic">
+					<div class="stat__statistic__item column">
+						<i class="fas fa-puzzle-piece stat__icon"></i>
+						<div class="stat__statistic__item__info column">
+							<span class="trial__main__info__header work__img__about">20</span>
+							<span class="trial__main__info__span">Product</span>
+						</div>
+					</div>
 
+					<div class="stat__statistic__item column">
+						<i class="fas fa-cloud-download-alt stat__icon"></i>
+						<div class="stat__statistic__item__info column">
+							<span class="trial__main__info__header work__img__about"
+								>120.000</span
+							>
+							<span class="trial__main__info__span">Downloads</span>
+						</div>
+					</div>
 
-<div class="trial features">
-    <div class="features__conteiner column ">
-        <div class="features__header">
-            <h1 class="features__header__title">Pricing and free Trial</h1>
-            <p class="features__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>
-        </div>
-        <div class="trial__main">
-            <div class="trial__main__item column">
-                <div class="trial__main__img"><i class="fas fa-mobile-alt trial__main__img__icon"></i></div>
-                <div class="trial__main__info">
-                    <h3 class="trial__main__info__header">Basic</h3>
-                    <span class="trial__main__info__span">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
-                <div class="trial__main__price">
-                    <h3 class="trial__main__price__header">FREE</h3>
-                    <span class="trial__main__price__span">free forever</span>
-                </div>
+					<div class="stat__statistic__item column">
+						<i class="fas fa-users stat__icon"></i>
+						<div class="stat__statistic__item__info column">
+							<span class="trial__main__info__header work__img__about"
+								>1200</span
+							>
+							<span class="trial__main__info__span">Customers</span>
+						</div>
+					</div>
 
-                <button class="trial__main__btn">GET FREE NOW</button>
-            </div>
-            <div class="trial__main__item column">
-                <div class="trial__main__img"><i class="fas fa-laptop trial__main__img__icon"></i></div>
-                <div class="trial__main__info">
-                    <h3 class="trial__main__info__header">Standard</h3>
-                    <span class="trial__main__info__span">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
-                <div class="trial__main__price">
-                    <h3 class="trial__main__price__header">$99</h3>
-                    <span class="trial__main__price__span">month</span>
-                </div>
-    
-                <button class="trial__main__btn">UPGRADE</button>
-            </div>
-            <div class="trial__main__item column">
-                <div class="trial__main__img"><i class="fas fa-desktop trial__main__img__icon"></i></div>
-                    <div class="trial__main__info">
-                        <h3 class="trial__main__info__header">Enterprise</h3>
-                        <span class="trial__main__info__span">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                    </div>
-                    <div class="trial__main__price">
-                        <h3 class="trial__main__price__header">$199</h3>
-                        <span class="trial__main__price__span">month</span>
-                    </div>
-        
-                    <button class="trial__main__btn">LEARN MORE</button>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-    
+					<div class="stat__statistic__item column">
+						<i class="fas fa-thumbs-up stat__icon"></i>
+						<div class="stat__statistic__item__info column">
+							<span class="trial__main__info__header work__img__about"
+								>900</span
+							>
+							<span class="trial__main__info__span">Like</span>
+						</div>
+					</div>
+				</div>
+				<div class="stat__user">
+					<div class="team__main__item__img stat__img"></div>
 
-<div class="work">
-    <div class="work__conteiner features__conteiner column">
-        <div class="features__header">
-            <h1 class="features__header__title">Ouar Works</h1>
-            <p class="features__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>
-        </div>
-        <div class="work__main trial__main">
-            <div class="work__main__item column">
-                <div class="work__main__item__img">
-                    <div></div>
-                    <div class="work__main__item__img__info">
-                        <div>
-                            <i class="far fa-eye"></i>
-                            <span>222</span>
-                        </div>
-                        <div>
-                            <span>20/03/18</span>
-                            <i class="far fa-clock"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="trial__main__info">
-                        <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                        <span class="trial__main__info__span">Design / Branding</span>
-                    </div>
-            </div>
-            <div class="work__main__item">
-                <div class="work__main__item__img ">
-                    <div></div>
-                    <div class="work__main__item__img__info">
-                        <div>
-                            <i class="far fa-eye"></i>
-                            <span>222</span>
-                        </div>
-                        <div>
-                            <span>20/03/18</span>
-                            <i class="far fa-clock"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="trial__main__info">
-                    <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                    <span class="trial__main__info__span">Design / Branding</span>
-                </div>
-            </div>
-            <div class="work__main__item column">
-                    <div class="work__main__item__img">
-                        <div></div>
-                        <div class="work__main__item__img__info">
-                            <div>
-                                <i class="far fa-eye"></i>
-                                <span>222</span>
-                            </div>
-                            <div>
-                                <span>20/03/18</span>
-                                <i class="far fa-clock"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trial__main__info">
-                            <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                            <span class="trial__main__info__span">Design / Branding</span>
-                        </div>
-                </div>
-                <div class="work__main__item">
-                    <div class="work__main__item__img ">
-                        <div></div>
-                        <div class="work__main__item__img__info">
-                            <div>
-                                <i class="far fa-eye"></i>
-                                <span>222</span>
-                            </div>
-                            <div>
-                                <span>20/03/18</span>
-                                <i class="far fa-clock"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trial__main__info">
-                        <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                        <span class="trial__main__info__span">Design / Branding</span>
-                    </div>
-                </div>
-                <div class="work__main__item column">
-                        <div class="work__main__item__img">
-                            <div></div>
-                            <div class="work__main__item__img__info">
-                                <div>
-                                    <i class="far fa-eye"></i>
-                                    <span>222</span>
-                                </div>
-                                <div>
-                                    <span>20/03/18</span>
-                                    <i class="far fa-clock"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trial__main__info">
-                                <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                                <span class="trial__main__info__span">Design / Branding</span>
-                            </div>
-                    </div>
-                    <div class="work__main__item">
-                        <div class="work__main__item__img ">
-                            <div></div>
-                            <div class="work__main__item__img__info">
-                                <div>
-                                    <i class="far fa-eye"></i>
-                                    <span>222</span>
-                                </div>
-                                <div>
-                                    <span>20/03/18</span>
-                                    <i class="far fa-clock"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trial__main__info">
-                            <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                            <span class="trial__main__info__span">Design / Branding</span>
-                        </div>
-                    </div>
-                    <div class="work__main__item column">
-                            <div class="work__main__item__img">
-                                <div></div>
-                                <div class="work__main__item__img__info">
-                                    <div>
-                                        <i class="far fa-eye"></i>
-                                        <span>222</span>
-                                    </div>
-                                    <div>
-                                        <span>20/03/18</span>
-                                        <i class="far fa-clock"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="trial__main__info">
-                                    <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                                    <span class="trial__main__info__span">Design / Branding</span>
-                                </div>
-                        </div>
-                        <div class="work__main__item">
-                            <div class="work__main__item__img ">
-                                <div></div>
-                                <div class="work__main__item__img__info">
-                                    <div>
-                                        <i class="far fa-eye"></i>
-                                        <span>222</span>
-                                    </div>
-                                    <div>
-                                        <span>20/03/18</span>
-                                        <i class="far fa-clock"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="trial__main__info">
-                                <h3 class="trial__main__info__header work__img__about">Font Awesome Icons</h3>
-                                <span class="trial__main__info__span">Design / Branding</span>
-                            </div>
-                        </div>
-        </div>
+					<div class="trial__main__info team__main__name">
+						<h3 class="trial__main__info__header work__img__about">John Doe</h3>
+						<span class="trial__main__info__span">From Wordpress</span>
+					</div>
+				</div>
 
-    </div>
+				<div class="stat__user__com features__header">
+					<p class="features__header__para stat__para">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+						Perferendis ratione ab minima, autem velit cumque dolorem eaque
+						animi laudantium quae minus facere, voluptatum nobis repudiandae est
+						vero architecto consequatur adipisci.
+					</p>
+				</div>
+			</div>
+		</div>
 
-</div>
+		<div class="contact">
+			<div class="contact__conteiner features__conteiner column">
+				<div class="features__header">
+					<h1 class="features__header__title">Keep in touch with us</h1>
+					<p class="features__header__para">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+						vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a
+						deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores,
+						quisquam distinctio?
+					</p>
+				</div>
 
+				<div class="contact__info">
+					<div class="contact__info__item">
+						<i class="fa fa-map-marker stat__icon" aria-hidden="true"></i>
+						<div
+							class="stat__statistic__item__info contact__info__item__cont column"
+						>
+							<span class="trial__main__info__header work__img__about"
+								>Address</span
+							>
+							<span class="trial__main__info__span"
+								>66, Dang Van ngu, Dong Da, Ha noi, Vietnam</span
+							>
+						</div>
+					</div>
+					<div class="contact__info__item">
+						<i class="fa fa-envelope stat__icon" aria-hidden="true"></i>
+						<div
+							class="stat__statistic__item__info contact__info__item__cont column"
+						>
+							<span class="trial__main__info__header work__img__about"
+								>E-mail</span
+							>
+							<span class="trial__main__info__span"
+								>contact@halovietnam.com</span
+							>
+						</div>
+					</div>
+					<div class="contact__info__item column">
+						<i class="fa fa-phone stat__icon" aria-hidden="true"></i>
+						<div
+							class="stat__statistic__item__info contact__info__item__cont column"
+						>
+							<span class="trial__main__info__header work__img__about"
+								>Phone</span
+							>
+							<span class="trial__main__info__span">+844 1234 56789</span>
+						</div>
+					</div>
+				</div>
+				<div class="contact__form">
+					<input
+						type="email"
+						placeholder="E-mail"
+						name="email"
+						class="contact__form__inp"
+					/>
+					<input
+						type="text"
+						placeholder="Full name"
+						name="name"
+						class="contact__form__inp"
+					/>
+					<textarea
+						type="text"
+						placeholder="Message"
+						name="message"
+						class="contact__form__inp contact__form__msginp"
+					></textarea>
+					<div><button>SEND MESSAGE</button></div>
+				</div>
+			</div>
+		</div>
 
-<div class="team">
-    <div class="team__conteiner features__conteiner column">
-        <div class="features__header">
-            <h1 class="features__header__title">Our Works</h1>
-            <p class="features__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>
-        </div>
-        <div class="team__main">
-            <div class="team__main__item column">
-                <div class="team__main__item__img"></div>
+		<footer>
+			<div class="footer">
+				<div class="footer__conteiner features__conteiner column">
+					<div class="features__header">
+						<h1 class="features__header__title">Sign up for our newsletter</h1>
+						<p class="features__header__para">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+							vel, facilis suscipit voluptatum numquam ab laborum enim voluptas
+							a deleniti autem cupiditate quibusdam iste alias eveniet eos.
+							Maiores, quisquam distinctio?
+						</p>
+					</div>
 
-                <div class="trial__main__info team__main__name">
-                    <h3 class="trial__main__info__header work__img__about">John Doe</h3>
-                    <span class="trial__main__info__span">UI Designer</span>
-                    <p class="trial__main__info__span">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
+					<div class="footer__info">
+						<div>
+							<input
+								type="email"
+								placeholder="Enter your email to update"
+								name="email"
+							/>
+							<button type="submit">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+				<div class="footer__link">
+					<div class="footer__link__address column">
+						<span>HALOVIETNAM LTD</span>
+						<span>66, Dang Van ngu, Dong Da</span>
+						<span>Hanoi, Vietnam</span>
+						<span>contact@halovietnam.com</span>
+						<span>+844 35149182</span>
+					</div>
+					<div class="column">
+						<a href="#" rel="noopener noreferrer">Examples</a>
+						<a href="#" rel="noopener noreferrer">Shop</a>
+						<a href="#" rel="noopener noreferrer">License</a>
+					</div>
+					<div class="column">
+						<a href="#" rel="noopener noreferrer">Contact</a>
+						<a href="#" rel="noopener noreferrer">About</a>
+						<a href="#" rel="noopener noreferrer">Privacy</a>
+						<a href="#" rel="noopener noreferrer">Terms</a>
+					</div>
+					<div class="column">
+						<a href="#" rel="noopener noreferrer">Download</a>
+						<a href="#" rel="noopener noreferrer">Support</a>
+						<a href="#" rel="noopener noreferrer">Documents</a>
+					</div>
+					<div class="column">
+						<a href="#" rel="noopener noreferrer">Media</a>
+						<a href="#" rel="noopener noreferrer">Blog</a>
+						<a href="#" rel="noopener noreferrer">Forums</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-                <div class="header__conteiner__head__icons team__main__item__icons">
-                    <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-facebook-f"></i></a></div>
-                    <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-twitter"></i></a></div>
-                    <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-linkedin-in"></i></a></div>
-                
-                </div>
-               
-            </div>
-            <div class="team__main__item column">
-                <div class="team__main__item__img"></div>
-    
-                <div class="trial__main__info team__main__name">
-                    <h3 class="trial__main__info__header work__img__about">John Doe</h3>
-                    <span class="trial__main__info__span">UI Designer</span>
-                    <p class="trial__main__info__span">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-    
-                <div class="header__conteiner__head__icons team__main__item__icons">
-                    <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-facebook-f"></i></a></div>
-                    <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-twitter"></i></a></div>
-                    <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-linkedin-in"></i></a></div>
-                    
-                </div>
-                   
-            </div>
-            <div class="team__main__item column">
-                    <div class="team__main__item__img"></div>
-    
-                    <div class="trial__main__info team__main__name">
-                        <h3 class="trial__main__info__header work__img__about">John Doe</h3>
-                        <span class="trial__main__info__span">UI Designer</span>
-                        <p class="trial__main__info__span">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-    
-                    <div class="header__conteiner__head__icons team__main__item__icons">
-                        <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-facebook-f"></i></a></div>
-                        <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-twitter"></i></a></div>
-                        <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-linkedin-in"></i></a></div>
-                    
-                    </div>
-                   
-                </div>
-                <div class="team__main__item column">
-                    <div class="team__main__item__img"></div>
-        
-                    <div class="trial__main__info team__main__name">
-                        <h3 class="trial__main__info__header work__img__about">John Doe</h3>
-                        <span class="trial__main__info__span">UI Designer</span>
-                        <p class="trial__main__info__span">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="header__conteiner__head__icons team__main__item__icons">
-                        <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-facebook-f"></i></a></div>
-                        <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-twitter"></i></a></div>
-                        <div class="header__conteiner__head__icon"><a href="#" class="header__conteiner__head__link"><i class="fab fa-linkedin-in"></i></a></div>
-                        
-                    </div>
-                       
-                </div>
-        </div>
-
-    </div>
-</div>
-
-
-<div class="stat ">
-    <div class="stat__conteiner features__conteiner column">
-        <div class="features__header">
-            <h1 class="features__header__title">Stats & Testimonial</h1>
-            <p class="features__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>
-        </div>
-
-        
-        <div class="stat__statistic">
-                <div class="stat__statistic__item column">
-                    <i class="fas fa-puzzle-piece stat__icon"></i>
-                    <div class="stat__statistic__item__info column">
-                        <span class="trial__main__info__header work__img__about">20</span>
-                        <span class="trial__main__info__span">Product</span>
-                    </div>
-                </div>
-
-                <div class="stat__statistic__item column">
-                        <i class="fas fa-cloud-download-alt stat__icon"></i>
-                        <div class="stat__statistic__item__info column">
-                            <span class="trial__main__info__header work__img__about">120.000</span>
-                            <span class="trial__main__info__span">Downloads</span>
-                        </div>
-                    </div>
-                   
-                    <div class="stat__statistic__item column">
-                            <i class="fas fa-users stat__icon"></i>
-                            <div class="stat__statistic__item__info column">
-                                <span class="trial__main__info__header work__img__about">1200</span>
-                                <span class="trial__main__info__span">Customers</span>
-                            </div>
-                        </div>
-
-                        <div class="stat__statistic__item column">
-                                <i class="fas fa-thumbs-up stat__icon"></i>
-                                <div class="stat__statistic__item__info column">
-                                    <span class="trial__main__info__header work__img__about">900</span>
-                                    <span class="trial__main__info__span">Like</span>
-                                </div>
-                            </div>
-
-        </div>
-        <div class="stat__user">
-                <div class="team__main__item__img stat__img"></div>
-    
-                <div class="trial__main__info team__main__name">
-                    <h3 class="trial__main__info__header work__img__about">John Doe</h3>
-                    <span class="trial__main__info__span">From Wordpress</span>
-                </div>
-
-        </div>
-
-        <div class="stat__user__com features__header">
-            <p class="features__header__para stat__para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis ratione ab minima, autem velit cumque dolorem eaque animi laudantium quae minus facere, voluptatum nobis repudiandae est vero architecto consequatur adipisci.</p>
-
-        </div>
-            
-    </div>
-</div>
-
-<div class=" contact">
-    <div class="contact__conteiner features__conteiner column">
-        <div class="features__header">
-            <h1 class="features__header__title">Keep in touch with us</h1>
-            <p class="features__header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel, facilis suscipit voluptatum numquam ab laborum enim voluptas a deleniti autem cupiditate quibusdam iste alias eveniet eos. Maiores, quisquam distinctio?</p>
-        </div>
-
-        
-        <div class="contact__info ">
-            <div class="contact__info__item">
-                <i class="fa fa-map-marker stat__icon "aria-hidden="true"></i>
-                <div class="stat__statistic__item__info contact__info__item__cont  column">
-                    <span class="trial__main__info__header work__img__about">Address</span>
-                    <span class="trial__main__info__span">66, Dang Van ngu, Dong Da, Ha noi, Vietnam</span>
-                </div>
-            </div>
-            <div class="contact__info__item"> 
-                <i class="fa fa-envelope stat__icon "aria-hidden="true"></i>
-                <div class="stat__statistic__item__info contact__info__item__cont  column">
-                    <span class="trial__main__info__header work__img__about">E-mail</span>
-                    <span class="trial__main__info__span">contact@halovietnam.com</span>
-                </div></div>
-            <div class="contact__info__item column">
-                <i class="fa fa-phone stat__icon "aria-hidden="true"></i>
-                <div class="stat__statistic__item__info contact__info__item__cont  column">
-                    <span class="trial__main__info__header work__img__about">Phone</span>
-                    <span class="trial__main__info__span">+844 1234 56789</span>
-                </div></div>
-        </div>
-        <div class="contact__form">
-            <div>
-                dasdad
-            </div>
-            <div>
-                dasdad
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="main.js"></script>
-</body>
+		<script src="main.js"></script>
+	</body>
 </html>

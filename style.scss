@@ -15,6 +15,15 @@ body{
 
 }
 
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover, button:hover{
+    cursor: pointer;
+}
+
 
 .header {
     width: 100%;
@@ -583,18 +592,19 @@ body{
     background: #ffffff;
 
     &__conteiner{
-        background-color: blue;
         align-items: center;
         height: 100%;
 }
     
     &__info{
   
-width: 650px;
-height: 130px;
+        width: 650px;
+        height: 130px;
         display: flex;
         flex-wrap: wrap;
         margin: auto;
+
+
         
         &__item{
             width: 180px;
@@ -619,14 +629,114 @@ height: 130px;
 
 
     &__form{
-background-color: green;
-width: 480px;
-height: 480px;
+        width: 480px;
+        height: 480px;
+
+    
+        &__inp{
+        width: 96%;
+        height: 55px;
+        border: 3px solid $priority-color;
+        margin-bottom: 24px;
+        outline: none;
+        padding-left: 16px;
+        }     
+        
+        &__msginp{
+            height: 210px;
+            padding-top: 16px;
+        }
+
+    }
+    &__form button{
+        height: 50px;
+        width: 150px;
+        background-color: black;
+        color: $main-background;
+        border: none;
+        outline: none;
+    }
+    &__form div{
+    display: flex;
+    justify-content: center;
+
+    }
+    button:hover{
+        color: black;
+        background-color: $hover;
+        
     }
 
 }
 
+footer{
+    width: 100%;
+    height: 780px;
+    margin-top: 80px;
+    background-color: #010101;
 
+    a, span{
+        color: $secondary-color;
+    }
+    a:hover{
+        color: $hover;
+    }
+    button:hover{
+        color: white;
+        background-color: #010101;
+        
+    }
+
+
+}
+.footer{
+    width: 100%;
+    height: 100%;
+
+    &__conteiner{
+        height: 380px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    &__conteiner h1{
+        color: #ffffff;
+    }
+
+    &__info div{
+        width: 770px;
+        margin: auto;
+    }
+    &__info input{
+        height: 48px;
+        width: 600px;
+        margin-left: 16px;
+    }
+    &__info button{
+        height: 54px;
+        width: 130px;
+        font-weight: bold;
+    }
+    &__link div{
+      
+        width: 160px;
+        
+    }
+    &__link{
+        height: 200px;
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+
+        &__address{
+        width: 310px !important;
+        }
+    }
+
+
+
+}
 
 
 
