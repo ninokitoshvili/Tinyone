@@ -5,6 +5,9 @@ $hover: #5f9ed0;
 $main-background: #ffffff;
 $secondary-color: #a1a1a1;
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -27,8 +30,9 @@ a:hover, button:hover{
 
 .header {
     width: 100%;
-     height: 850px;
-    // height: 100vh;
+    // height: 850px;
+    // height: calc(100vh - 120px);
+    height: calc(100vh - 0px);
     background:$header-main-color;
     display: flex;
     justify-content: center;
@@ -36,9 +40,9 @@ a:hover, button:hover{
 
     &__conteiner{
         width: 1000px;
-         height: 780px;
+        // height: 780px;
         // height: 100vh;
-        margin: auto;
+        // margin: auto;
 
       
 
@@ -58,7 +62,7 @@ a:hover, button:hover{
             }
             
             &__logo{
-                width: 150px;
+                // width: 150px;
                 height: 32px;
                 color: $priority-color;
                 display: flex;
@@ -125,11 +129,6 @@ a:hover, button:hover{
                 margin-bottom: 5px;
             }
 
-            // &__para {
-            //     // margin-bottom: 40px;
-
-            // }
-
             &__btn{
                 border: 1px solid $priority-color;
                 width: 250px;
@@ -179,11 +178,12 @@ a:hover, button:hover{
     background: gold;
     position: absolute;
     width: auto;
-    // height: calc(100vh - 90px);
-    height: calc(780px - 90px);
+    height: calc(100vh - 90px);
+    // height: calc(780px - 90px);
+    // height: 100vh;
     left: 0px;
     right: 0px;
-    top: 100px;
+    top: 0px;
     bottom: 0px;
     margin: auto;
     border: 1px solid $priority-color;
@@ -192,11 +192,20 @@ a:hover, button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+    // position: relative;
+    animation: navmove 2s ;
+    // animation-iteration-count:initial;
+    // transition-timing-function: cubic-bezier(10,2,3,1);
+    // transform: translateX(50rem);
+    // top: 0;
+    // z-index: 0;
+    // transition: 0.5s;
+    transform: translate(16px, -10px) scale(0.7);
 
     &__conteiner {
         list-style: none;
-        padding-left: 10px;
-        padding-right: 10px;
+        // padding-left: 10px;
+        // padding-right: 10px;
         
 
         &__list{
@@ -752,3 +761,8 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+@keyframes navmove {
+    from {top: -100vh}
+    to {top: 0px;}
+  }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,15 +21,13 @@ a:hover, button:hover {
 
 .header {
   width: 100%;
-  height: 850px;
+  height: calc(100vh - 0px);
   background: #fcdb00;
   display: flex;
   justify-content: center;
 }
 .header__conteiner {
   width: 1000px;
-  height: 780px;
-  margin: auto;
 }
 .header__conteiner__head {
   width: 100%;
@@ -41,7 +43,6 @@ a:hover, button:hover {
   cursor: pointer;
 }
 .header__conteiner__head__logo {
-  width: 150px;
   height: 32px;
   color: #222222;
   display: flex;
@@ -124,10 +125,10 @@ a:hover, button:hover {
   background: gold;
   position: absolute;
   width: auto;
-  height: 690px;
+  height: calc(100vh - 90px);
   left: 0px;
   right: 0px;
-  top: 100px;
+  top: 0px;
   bottom: 0px;
   margin: auto;
   border: 1px solid #222222;
@@ -135,11 +136,11 @@ a:hover, button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation: navmove 2s;
+  transform: translate(16px, -10px) scale(0.7);
 }
 .drop__nav__conteiner {
   list-style: none;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .drop__nav__conteiner__list {
   border-bottom: 1px solid #222222;
@@ -557,4 +558,13 @@ footer button:hover {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+@keyframes navmove {
+  from {
+    top: -100vh;
+  }
+  to {
+    top: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
