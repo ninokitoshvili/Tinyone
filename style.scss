@@ -188,25 +188,15 @@ a:hover, button:hover{
     margin: auto;
     border: 1px solid $priority-color;
     display: none;
-    // display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    // position: relative;
     animation: navmove 2s ;
-    // animation-iteration-count:initial;
-    // transition-timing-function: cubic-bezier(10,2,3,1);
-    // transform: translateX(50rem);
-    // top: 0;
-    // z-index: 0;
-    // transition: 0.5s;
     transform: translate(16px, -10px) scale(0.7);
 
     &__conteiner {
         list-style: none;
-        // padding-left: 10px;
-        // padding-right: 10px;
-        
+       
 
         &__list{
             border-bottom: 1px solid $priority-color;
